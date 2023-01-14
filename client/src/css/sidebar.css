@@ -1,0 +1,10 @@
+.sidebarContainer {
+  height: 95vh;
+  width: 100%;
+}
+
+.logoContainer {
+  align-items: center;
+  text-align: center;
+  color: white;
+}

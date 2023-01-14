@@ -1,11 +1,27 @@
-import React from 'react'
+import React from "react";
+
+import { Layout, Menu, theme } from "antd";
+const { Header } = Layout;
 
 const Navbar = () => {
-  return (
-    <div>
-      <h1>Navbar</h1>
-    </div>
-  )
-}
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
 
-export default Navbar
+  const navItems = ["Home", "About"];
+
+  const items1 = navItems.map((key) => ({
+    label: `${key}`,
+  }));
+  return (
+    <Header
+      style={{ padding: 0, background: colorBgContainer }}
+      className='header'
+    >
+      <div className='logo' />
+      <Menu mode='horizontal' defaultSelectedKeys={["2"]} items={items1} />
+    </Header>
+  );
+};
+
+export default Navbar;

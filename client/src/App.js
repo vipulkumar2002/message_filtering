@@ -1,9 +1,10 @@
-import "./App.css";
+import "./css/App.css";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className='App'>
-      <h1>Massage Filtering started !</h1>
+    <div className="">
+      <Home/>
     </div>
   );
 };
